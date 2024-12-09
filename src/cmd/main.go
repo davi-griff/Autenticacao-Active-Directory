@@ -32,7 +32,7 @@ func main() {
 		log.Fatalf("Erro ao criar o repositório: %v", err)
 	}
 
-	apiRepository := smarketAPIGateway.NewSmarketGateway("1234567890")
+	apiRepository := smarketAPIGateway.NewSmarketGateway("1234567890", adConfig.ApiUrl)
 
 	apiService := apiService.NewApiService(apiRepository)
 	authService := authService.NewAuthService(adRepository)
