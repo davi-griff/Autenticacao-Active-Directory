@@ -44,33 +44,4 @@ func main() {
 		authService.Close()
 		log.Fatalf("Erro ao iniciar a autenticação: %v", err)
 	}
-
-	// success, err := authService.Authenticate("smarket.ad", "cHL_bm9N@10")
-	// if err != nil {
-	// 	log.Fatalf("Erro ao autenticar: %v", err)
-	// }
-
-	// fmt.Println(success)
-
-	// user, err := authService.GetUser("smarket.ad")
-	// if err != nil {
-	// 	log.Fatalf("Erro ao buscar usuário: %v", err)
-	// }
-
-	// users, err := authService.GetUsers("TI - Colaboradores")
-	// if err != nil {
-	// 	log.Fatalf("Erro ao buscar usuários: %v", err)
-	// }
-
-	// // Configuração
-	// config := ADConfig{
-	// 	// Server:   "dtc02srvad01.koch.intranet",
-	// 	// Server:   "172.19.20.1",
-	// 	Server:   "localhost",
-	// 	Port:     389,
-	// 	Domain:   "koch.intranet",
-	// 	Username: "smarket.ad",
-	// 	Password: "cHL_bm9N@10",
-	// 	BaseDN:   "DC=koch,DC=intranet", // Construído a partir do domínio
-	// }
 }
